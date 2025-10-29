@@ -1,0 +1,142 @@
+<!-- HTML File: index.html -->
+<!-- Use the same structure for other HTML pages and link to the same CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halloween</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Freckle+Face&family=Irish+Grover&family=Jolly+Lodger&family=Road+Rage&family=Rubik+Distressed&family=Rubik+Wet+Paint&family=Shadows+Into+Light+Two&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/costume.png" type="image/x-icon" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="title-text">
+        <h1 class="main-title">It's Halloween!</h1>
+        <p class="tagline">A night of fright, code, and candy...</p>
+      </div>
+      <nav>
+        <ul class="navbar">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./assets/public/stories.html">Stories</a></li>
+          <li><a href="./assets/public/trick.html">Trick/Treat</a></li>
+          <li><a href="./assets/public/quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Cards Section -->
+      <section class="cards">
+        <!-- Card 1 -->
+        <section class="hero card">
+          <div class="text">
+            <h2>Welcome, wanderer...</h2>
+            <p>
+              On this cursed night, the veil between worlds is thin. Stories await, tricks may haunt, and only the brave will seek the treats...
+            </p>
+          </div>
+          <img class="pooky" src="./assets/images/ghost.png" alt="Ghost" />
+        </section>
+
+        <!-- Card 2 -->
+        <section class="intro card">
+          <div class="text">
+            <h2>A Night Like No Other</h2>
+            <p>
+              When the moon rises high and the pumpkins glow bright, magic dances through the shadows of the night. This is Halloween — a time for wonder, for stories whispered and candy thunder.
+              <br />Explore... if you dare.
+            </p>
+          </div>
+          <img class="jack" src="./assets/images/jack.png" alt="Pumpkin" />
+        </section>
+
+        <!-- Links to other pages -->
+        <section class="home-links">
+          <h2>Choose Your Path...</h2>
+          <div class="card-container">
+            <div class="card">
+              <h3>📜 Spooky Stories</h3>
+              <p>Whispers in the dark, legends from the shadows...</p>
+              <a href="./assets/public/stories.html">Read now</a>
+            </div>
+            <div class="card">
+              <h3>🎁 Trick or Treat</h3>
+              <p>Will you get sweets... or a surprise?</p>
+              <a href="./assets/public/trick.html">Try your luck</a>
+            </div>
+            <div class="card">
+              <h3>🧛 Quiz</h3>
+              <p>Witch? Ghost? Candy Corn? Find out who you are...</p>
+              <a href="./assets/public/quiz.html">Take the quiz</a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Extra Sections -->
+      <section class="two">
+        <!-- Reviews -->
+        <section class="ghost-reviews">
+          <h2>👻 Voices from the Shadows</h2>
+          <ul>
+            <li>🧙 “Best site I’ve haunted in 300 years.” – Melinda the Witch</li>
+            <li>🧛 “Tastes like... pumpkin code.” – Vlad the Developer</li>
+            <li>👻 “Pooky is my best friend now.” – Lil Ghostie</li>
+          </ul>
+        </section>
+
+        <!-- Fun Facts -->
+        <section class="halloween-facts">
+          <h2>🧠 Did You Know?</h2>
+          <ul>
+            <li>🎃 Jack-o’-lanterns were originally carved from turnips!</li>
+            <li>👻 Halloween is over 2,000 years old!</li>
+            <li>🍬 Americans buy over 600 million pounds of candy every Halloween.</li>
+          </ul>
+        </section>
+
+        <!-- Quote -->
+        <section class="closing-quote">
+          <blockquote>
+            “When black cats prowl and pumpkins gleam, may luck be yours on Halloween.” 🎃
+          </blockquote>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© Spooky website made with love by Heitor to celebrate the Halloween</p>
+      <h3>Socials</h3>
+      <a href="https://www.instagram.com/heitorfialhoo/" target="_blank" aria-label="Instagram">
+        <!-- SVG Icon for Instagram -->
+      </a>
+      <a href="https://github.com/heitoor01" target="_blank" aria-label="Github">
+        <!-- SVG Icon for GitHub -->
+      </a>
+      <a href="https://www.linkedin.com/in/heitor-fialho-515235296/" target="_blank" aria-label="LinkedIn">
+        <!-- SVG Icon for LinkedIn -->
+      </a>
+    </footer>
+
+    <!-- JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
