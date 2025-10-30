@@ -279,8 +279,8 @@ footer a:hover {
   cursor: pointer;
   font-family: "Shadows Into Light Two", cursive;
   transition: all 0.3s ease;
-  min-width: 150px;
-
+  width: 150px;
+  height: 64px;
 }
 
 .answer-btn:hover {
@@ -487,8 +487,8 @@ footer a:hover {
 
   .question {
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
   }
 
   .answers {
