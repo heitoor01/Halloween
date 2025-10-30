@@ -222,11 +222,24 @@ footer h3 {
 
 footer a {
   text-decoration: none;
+  color: var(--ghost-gray);
+}
+
+footer a:hover {
+  color: var(--pumpkin-orange)
 }
 
 /* =============================
    🧠 QUIZ PAGE
    ============================= */
+.back-btn {
+  text-decoration: none;
+  color: var(--ghost-gray);
+}
+
+.back-btn:hover {
+  color: var(--pumpkin-orange);
+}
 
 #quiz {
   display: flex;
@@ -282,6 +295,125 @@ footer a {
   font-size: 1.4rem;
   color: var(--candycorn-yellow);
   margin-top: 2rem;
+}
+
+/* =============================
+    📖 STORIES PAGE
+   ============================= */
+#story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#story h3 {
+  text-align: center;
+}
+
+#story-container {
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+  width: 50%;
+}
+
+#story {
+  white-space: pre-line;
+}
+
+#show-story {
+  background-color: #ff7518; /* pumpkin orange */
+  color: #fffaf0; /* ghostly white */
+  font-family: "Creepster", cursive; /* You can use spooky fonts! */
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 117, 24, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#show-story:hover {
+  background-color: #b34700; /* burnt orange */
+  box-shadow: 0 0 30px rgba(255, 117, 24, 0.8),
+    0 0 15px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============================
+   🍭 TRICK OR TREAT
+   ============================= */
+.trick-treat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#trick-treat-btn {
+  background-color: #ff7518; /* pumpkin orange */
+  color: #fffaf0; /* ghostly white */
+  font-family: "Creepster", cursive; /* You can use spooky fonts! */
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 117, 24, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px #000;
+  margin: 10px;
+}
+
+#trick-treat-btn:hover {
+  background-color: #b34700; /* burnt orange */
+  box-shadow: 0 0 30px rgba(255, 117, 24, 0.8),
+    0 0 15px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  20% {
+    transform: translate(-2px, -3px) rotate(-1deg);
+  }
+  40% {
+    transform: translate(-1px, 2px) rotate(1deg);
+  }
+  60% {
+    transform: translate(3px, 1px) rotate(0deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, 2px) rotate(-1deg);
+  }
 }
 
 /* =============================
