@@ -6,7 +6,7 @@ Welcome to my **Halloween-themed website** — a playful, interactive and cozy c
 
 ## 🌐 Live Demo
 
-👉 [View it on GitHub Pages](https://heitoor01.github.io/Halloween/index.html)
+👉 [View it on GitHub Pages]( https://heitoor01.github.io/Halloween/)
 
 ---
 
