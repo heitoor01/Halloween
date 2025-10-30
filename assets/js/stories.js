@@ -15,6 +15,8 @@ const stories = [
   // ... More stories coming soon
 ];
 
+let recentIndexes = [];
+
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("show-story");
   const container = document.getElementById("story-container");
@@ -22,9 +24,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const text = document.getElementById("story-text");
 
   button.addEventListener("click", () => {
-    const random = stories[Math.floor(Math.random() * stories.length)];
-    title.textContent = random.title;
-    text.textContent = random.text;
+    let newIndex;
+
+    // Avoid recently shown stories
+    do {
+      newIndex = Math.floor(Math.random() * stories.length);
+    } while (
+      recentIndexes.includes(newIndex) &&
+      stories.length > recentIndexes.length
+    );
+
+    // Update the queue (store last 2 shown)
+    recentIndexes.push(newIndex);
+    if (recentIndexes.length > 2) {
+      recentIndexes.shift(); // Remove the oldest
+    }
+
+    const story = stories[newIndex];
+    title.textContent = story.title;
+    text.textContent = story.text;
     container.classList.remove("hidden");
   });
 });
+
+
+
+

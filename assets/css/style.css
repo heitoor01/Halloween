@@ -28,6 +28,7 @@ body {
   color: var(--ghost-gray);
   font-family: "Shadows Into Light Two", cursive;
   font-weight: 400;
+  font-size: 1.1rem;
 }
 
 /* =============================
@@ -39,6 +40,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
   font-family: "Rubik Wet Paint", system-ui;
 }
 
@@ -263,6 +265,7 @@ footer a:hover {
 .answers {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 1rem;
   align-items: center;
 }
@@ -271,11 +274,13 @@ footer a:hover {
   background-color: var(--witch-purple);
   color: var(--ghost-gray);
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   border-radius: 10px;
   cursor: pointer;
   font-family: "Shadows Into Light Two", cursive;
   transition: all 0.3s ease;
+  min-width: 150px;
+
 }
 
 .answer-btn:hover {
@@ -421,9 +426,12 @@ footer a:hover {
    ============================= */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     text-align: center;
+  }
+  #main-header {
+    flex-direction: column;
   }
   .navbar {
     flex-direction: row;
@@ -477,6 +485,12 @@ footer a:hover {
     font-size: 1.1rem;
   }
 
+  .question {
+    display: flex;
+    justify-content: center;
+    
+  }
+
   .answers {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* two columns */
@@ -488,4 +502,24 @@ footer a:hover {
     width: 100%;
     max-width: 140px;
   }
+
+  .restart-btn {
+    margin-left: 100%;
+  }
+
+  #story {
+    padding: 10px;
+  }
+
+  #story-container {
+    width: 100%;
+  }
+
+  .trick-treat-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }
